@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>bet365 · 简明指南与访问提醒</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafafa;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e1e1e;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+      flex: 1;
+    }
+
+    /* hero 区域 — 杂志风格窄幅 */
+    .hero {
+      padding: 80px 0 48px;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .hero__label {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7a7a7a;
+      background: #f0f0f0;
+      padding: 4px 12px;
+      border-radius: 30px;
+      margin-bottom: 24px;
+    }
+
+    .hero__title {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin-bottom: 20px;
+    }
+
+    .hero__sub {
+      font-size: 1.1rem;
+      color: #5a5a5a;
+      max-width: 600px;
+    }
+
+    /* 正文卡片式隔断 */
+    .section-card {
+      margin: 52px 0;
+    }
+
+    .section-card h2 {
+      font-size: 1.5rem;
+      font-weight: 450;
+      letter-spacing: -0.01em;
+      border-left: 4px solid #d0d0d0;
+      padding-left: 18px;
+      margin-bottom: 24px;
+      color: #222;
+    }
+
+    .section-card p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #2e2e2e;
+    }
+
+    .section-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight {
+      background: #f4f4f4;
+      padding: 16px 20px;
+      border-radius: 12px;
+      margin: 28px 0;
+      font-size: 0.95rem;
+      color: #2c2c2c;
+    }
+
+    .faq-mini {
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin: 40px 0 56px;
+    }
+
+    .faq-mini h3 {
+      font-size: 1.2rem;
+      font-weight: 480;
+      margin-bottom: 18px;
+    }
+
+    .faq-item {
+      margin-bottom: 18px;
+    }
+
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+      color: #1a1a1a;
+    }
+
+    .faq-a {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .faq-a a {
+      color: #2c2c2c;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #b0b0b0;
+      transition: all 0.2s ease;
+    }
+
+    .faq-a a:hover {
+      text-decoration-color: #1a1a1a;
+    }
+
+    /* 页尾 — 极简访问提示 */
+    .footer-note {
+      border-top: 1px solid #eaeaea;
+      padding: 40px 0 56px;
+      text-align: center;
+    }
+
+    .footer-note p {
+      font-size: 0.95rem;
+      color: #6a6a6a;
+      max-width: 460px;
+      margin: 0 auto 12px;
+    }
+
+    .footer-note .sitelink {
+      color: #1a1a1a;
+      font-weight: 400;
+      text-decoration: none;
+      border-bottom: 1px solid #c0c0c0;
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+
+    .footer-note .sitelink:hover {
+      border-bottom-color: #1a1a1a;
+    }
+
+    .footer-note .meta {
+      margin-top: 18px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      .hero {
+        padding: 52px 0 36px;
+      }
+      .hero__title {
+        font-size: 1.8rem;
+      }
+      .hero__sub {
+        font-size: 1rem;
+      }
+      .page {
+        padding: 0 18px;
+      }
+      .section-card h2 {
+        font-size: 1.3rem;
+      }
+      .faq-mini {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .hero__title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- hero 杂志横幅 -->
+    <header class="hero">
+      <span class="hero__label">📘 简明指南</span>
+      <h1 class="hero__title">关于 bet365 的基础认知<br>与访问前你该了解的几件事</h1>
+      <p class="hero__sub">我们并非官方平台，仅从用户视角整理一份温和的参考信息，帮助你更清晰地理解 bet365 的使用逻辑与注意事项。</p>
+    </header>
+
+    <!-- 三段自然介绍 -->
+    <div class="section-card">
+      <h2>平台定位 · 它提供什么</h2>
+      <p><strong>bet365</strong> 是一个综合性的在线娱乐与体育互动平台，在全球多个地区拥有用户基础。其核心服务涵盖体育赛事观赏、实时数据、以及多种休闲类游戏内容。对于新用户来说，了解平台的基本构成和适用地区规则是最优先的一步。</p>
+      <p>许多用户选择 bet365 的原因在于其界面相对直观、赛事覆盖范围广，同时提供多种语言支持。但值得注意的是，不同国家或地区的访问状况和服务内容可能存在差异，建议在浏览前先确认当地的相关规定。</p>
+    </div>
+
+    <div class="section-card">
+      <h2>访问要点 · 网络与账户基础</h2>
+      <p>要正常使用 <a href="https://com-bet365.com" style="color:#1e1e1e; text-decoration:underline; text-underline-offset:3px; text-decoration-color:#b0b0b0;">bet365</a> 提供的服务，通常需要完成注册并验证身份信息。这一流程旨在符合安全合规要求，也帮助保护用户账户安全。请务必使用真实、有效的个人资料进行注册，以免影响后续操作。</p>
+      <p>另外，平台对网络环境有一定要求。如果你所在的区域无法直接连接，可能需要参考官方提供的访问方式。切勿轻信非官方渠道所谓的“破解版”或“代充服务”，这些行为可能带来隐私泄露或财产损失的风险。</p>
+      <div class="highlight">
+        ⚡ 提醒：任何要求你提供账户密码、支付密码的第三方链接都应高度警惕。bet365 官方不会通过非正规渠道索取你的敏感信息。
+      </div>
+    </div>
+
+    <div class="section-card">
+      <h2>使用习惯 · 从了解到适应</h2>
+      <p>初次接触 bet365 的用户可能会被其丰富的版块所吸引。建议从自己最感兴趣的领域开始——例如你平时关注的体育联赛，或熟悉的游戏类型。平台通常提供演示模式或低门槛体验，善用这些功能可以帮助你更快上手。</p>
+      <p>同时，合理管理时间和预算是非常重要的一环。任何娱乐性质的参与都应建立在理性与自控的基础上。如果你感到节奏失控或出现过度投入的倾向，请暂停操作并寻求专业帮助。bet365 自身也提供了多种自律工具，如存款限额、冷却期等，建议新用户优先了解并加以设置。</p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="faq-mini">
+      <h3>❓ 常见疑问摘要</h3>
+      <div class="faq-item">
+        <span class="faq-q">Q：访问 bet365 一定需要下载客户端吗？</span>
+        <span class="faq-a">A：不一定。你可以直接通过官网 <a href="https://com-bet365.com">bet365</a> 在浏览器中使用大部分核心功能。移动端也提供官方应用，但请务必从官方渠道获取。</span>
+      </div>
+      <div class="faq-item">
+        <span class="faq-q">Q：忘记账户密码该如何处理？</span>
+        <span class="faq-a">A：在登录页面点击“忘记密码”，按提示通过注册邮箱或手机号验证即可重置。过程中请留意官方发来的邮件，切勿点击不明链接。</span>
+      </div>
+      <div class="faq-item">
+        <span class="faq-q">Q：是否有中文界面与客服？</span>
+        <span class="faq-a">A：bet365 支持包括中文在内的多语言界面，同时也提供中文客服通道（如在线聊天、邮件），响应速度通常较快。</span>
+      </div>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <footer class="footer-note">
+      <p>本页面仅为信息介绍，不构成任何引导或推荐。如果你希望进一步了解，可以直接访问 <a href="https://com-bet365.com" class="sitelink">bet365</a> 查阅官方说明。</p>
+      <p class="meta">理性参与 · 适度休闲 · 了解规则再出发</p>
+    </footer>
+  </div>
+</body>
+</html>
